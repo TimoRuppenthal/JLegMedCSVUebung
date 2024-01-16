@@ -3,49 +3,14 @@
 [![New Release](https://github.com/shs-it/JLegMedCSVUebung.git/actions/workflows/newRelease.yml/badge.svg)](https://github.com/shs-it/JLegMedCSVUebung.git/actions/workflows/newRelease.yml)
 
 # JLegMedCSVUebung
-This template can be used to start your own JLegMed application
- 
-##  Requirements
+Ziel dieses Projektes ist es, zu lernen wie man einen CSV-Producer schreibt. Die Schritte der Seite https://www.baeldung.com/apache-commons-csv werden 1:1 so ausgeführt.
+Dieses Projekt soll folgende Features anbieten:
 
-*   Java 21+ installed
-*   IDE with maven support 
-*   [Optional] Docker or Kubernetes if you want to run your application in a container. See [here](README-GitHub.md) for more information.   
-*   [Optional] A locally running [developer stack](deploy/developerStack.yml) providing a Postgres database, ActiveMQ broker, and Swagger-UI 
+* Eine CSV-Datei lesen
+* Eine CSV-Datei erstellen
+* Zugriff auf Spalten über den Index
+* Zugriff auf Spalten über vordefienierte Überschriften
+* Verwendung von Enums als Überschriften
+* Überspringen der Überschriftenzeile
+* Erstellen einer Datei mit Kopfzeilen
 
-## Build the Project
-
-*   Checkout the new project in your favorite IDE
-
-*   [Optional] **With** running [developer stack](deploy/developerStack.yml):
-    ```shell
-    mvn clean install
-    
-    java -jar "-Djlegmed.config.import=src/test/resources/jlegmed-test.properties" target/jlegmedcsvuebung-jar-with-dependencies.jar
-    ```
-
-
-## Start Developing your Project
-
-### Set up your project on GitHub  
-
-To continuously build and deploy your application, we recommend using GitHub as described [here](README-GitHub.md).
-
-### Package Structure
-To organize our code we recommend the following package structure:
-
-``` 
-(de.dillinger.tlog)
-    plugins
-    |    <technology 1>
-    |    ...
-    |    <technology n>
-    dto  
-    |    <use case 1>
-    |    ...
-    |    <use case n>
-    JLegMedCSVUebung.java
-```
-
-### Cleanup Readme
-
-After successfully set up your new project, you should clean up the text of README as described [here](https://www.makeareadme.com)    
